@@ -2,11 +2,6 @@
 
 > Researching the issue Error: Call to function 'ExponentImagePicker.launchCameraAsync' has been rejected
 
-```
-[Error: Call to function 'ExponentImagePicker.launchCameraAsync' has been rejected.
-→ Caused by: java.lang.IllegalStateException: Attempting to launch an unregistered ActivityResultLauncher with contract expo.modules.imagepicker.contracts.CameraContract@5ec86f0 and input CameraContractOptions(uri=content://be.transit.camera.ImagePickerFileProvider/cached_expo_files/ImagePicker/b6cee57e-db28-4b5e-a738-8d096c043011.jpeg, options=expo.modules.imagepicker.ImagePickerOptions@472c469). You must ensure the ActivityResultLauncher is registered before calling launch()]
-```
-
 ## Reproduce the issue
 
 The issue is only reproducible with a full production build or a development build using a dev client.
