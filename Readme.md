@@ -9,7 +9,7 @@
 
 ## Reproduce the issue
 
-The issue is only reproducable with a full production build or a development build using a dev client.
+The issue is only reproducible with a full production build or a development build using a dev client.
 Here are the steps for reproducing with a dev client:
 
 Deployment steps:
