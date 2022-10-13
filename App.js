@@ -10,6 +10,7 @@ const LOCATION_TASK_NAME = "background-location-task";
 export default function ImagePickerExample() {
   const [image, setImage] = useState(null);
   const [pickingImage, setPickingImage] = useState(false);
+
   useLocationPermissions();
 
   TaskManager.defineTask(
@@ -98,8 +99,7 @@ export default function ImagePickerExample() {
         );
         await Location.startLocationUpdatesAsync(LOCATION_TASK_NAME, {
           accuracy: Location.Accuracy.Highest,
-          // distanceInterval: 500,
-          timeInterval: 5000,
+          timeInterval: 20000,
           pausesUpdatesAutomatically: false,
           showsBackgroundLocationIndicator: true,
           activityType: Location.ActivityType.AutomotiveNavigation,
