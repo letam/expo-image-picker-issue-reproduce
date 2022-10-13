@@ -5,6 +5,9 @@ import { Alert, Button, Image, LogBox, Text, View } from "react-native";
 
 import { LOCATION_TASK_NAME } from "./Constants";
 import LocationTrackingButtons from "./src/hooks/LocationTrackingButtons";
+import "react-native-gesture-handler";
+import * as Sentry from "sentry-expo";
+require("log-timestamp"); // only enable this in developmnent mode
 
 // require("log-timestamp"); // only enable this in developmnent mode
 
@@ -12,12 +15,12 @@ const App = () => {
   const [image, setImage] = useState(null);
   console.log("App.TSX: RENDERING");
 
-  // useEffect(() => {
-  //   return () => {
-  //     console.log("STOPPING ALL REGISTERED TASKS");
-  //     TaskManager.unregisterAllTasksAsync();
-  //   };
-  // }, []);
+  useEffect(() => {
+    return () => {
+      console.log("STOPPING ALL REGISTERED TASKS");
+      TaskManager.unregisterAllTasksAsync();
+    };
+  }, []);
 
   const pickCameraImage = async () => {
     console.log("Picking camera image");
