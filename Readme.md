@@ -2,6 +2,16 @@
 
 > Researching the issue Error: Call to function 'ExponentImagePicker.launchCameraAsync' has been rejected
 
+It seems to be related to the expo task manager too.
+
+** I've found that the issue appears when: **
+
+- Given you are tracking location via a task in the task manager
+- When you close the app
+- When you reopen the app
+- When you try to pick an image
+- Then the image picker will not open
+
 ## Reproduce the issue
 
 The issue is only reproducible with a full production build or a development build using a dev client.
