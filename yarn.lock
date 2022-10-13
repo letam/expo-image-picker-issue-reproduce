@@ -1700,6 +1700,11 @@
   dependencies:
     "@types/node" "*"
 
+"@types/i18n-js@^3.8.3":
+  version "3.8.3"
+  resolved "https://registry.yarnpkg.com/@types/i18n-js/-/i18n-js-3.8.3.tgz#9aac0ac81c0b5f16d864b395607442eebb382528"
+  integrity sha512-Y20B7kgoNrchIYCfty20zQYeFFJMHdegwy9VopCEKdByp7Tlv0jtWrfoRb+3r2mIvgrwp/eMwXhhXOBYKEFkTA==
+
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0":
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/@types/istanbul-lib-coverage/-/istanbul-lib-coverage-2.0.4.tgz#8467d4b3c087805d63580480890791277ce35c44"
@@ -1723,6 +1728,32 @@
   version "18.8.4"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-18.8.4.tgz#54be907698f40de8a45770b48486aa3cbd3adff7"
   integrity sha512-WdlVphvfR/GJCLEMbNA8lJ0lhFNBj4SW3O+O5/cEGw9oYrv0al9zTwuQsq+myDUXgNx2jgBynoVgZ2MMJ6pbow==
+
+"@types/prop-types@*":
+  version "15.7.5"
+  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.5.tgz#5f19d2b85a98e9558036f6a3cacc8819420f05cf"
+  integrity sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==
+
+"@types/react-native@~0.69.1":
+  version "0.69.13"
+  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.69.13.tgz#f947b2bd00439126f8101441945739698bb5051e"
+  integrity sha512-jEKIkqKjmYI7NeRssLrn/zRtFeI6S1FNe5p45OKbBxrQArXpF2lJelztFTEZKIv1PSfYKcAk5x6+1sdZFEFAkA==
+  dependencies:
+    "@types/react" "*"
+
+"@types/react@*":
+  version "18.0.21"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.21.tgz#b8209e9626bb00a34c76f55482697edd2b43cc67"
+  integrity sha512-7QUCOxvFgnD5Jk8ZKlUAhVcRj7GuJRjnjjiY/IUBWKgOlnvDvTMLD4RTF7NPyVmbRhNrbomZiOepg7M/2Kj1mA==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/scheduler@*":
+  version "0.16.2"
+  resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.2.tgz#1a62f89525723dde24ba1b01b092bf5df8ad4d39"
+  integrity sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==
 
 "@types/yargs-parser@*":
   version "21.0.0"
@@ -2098,6 +2129,11 @@ big-integer@1.6.x:
   version "1.6.51"
   resolved "https://registry.yarnpkg.com/big-integer/-/big-integer-1.6.51.tgz#0df92a5d9880560d3ff2d5fd20245c889d130686"
   integrity sha512-GPEid2Y9QU1Exl1rpO9B2IPJGHPSupF5GnVIP0blYvNOMer2bTvSWs1jGOUg04hTmu67nmLsQ9TBo1puaotBHg==
+
+bignumber.js@*:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-9.1.0.tgz#8d340146107fe3a6cb8d40699643c302e8773b62"
+  integrity sha512-4LwHK4nfDOraBCtst+wOWIHbu1vhvAPJK8g8nROd4iuc3PSEjWif/qwbkh8jwCJz6yDBvtU4KPynETgrfh7y3A==
 
 bl@^4.1.0:
   version "4.1.0"
@@ -2627,6 +2663,11 @@ crypto-random-string@^2.0.0:
   resolved "https://registry.yarnpkg.com/crypto-random-string/-/crypto-random-string-2.0.0.tgz#ef2a7a966ec11083388369baa02ebead229b30d5"
   integrity sha512-v1plID3y9r/lPhviJ1wrXpLeyUIGAZ2SHNYTEapm7/8A9nLPoyvVp3RK/EPFqn5kEznyWgYZNsRtYYIWbuG8KA==
 
+csstype@^3.0.2:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.1.tgz#841b532c45c758ee546a11d5bd7b7b473c8c30b9"
+  integrity sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==
+
 dag-map@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/dag-map/-/dag-map-1.0.2.tgz#e8379f041000ed561fc515475c1ed2c85eece8d7"
@@ -2969,6 +3010,13 @@ expo-keep-awake@~10.2.0:
   resolved "https://registry.yarnpkg.com/expo-keep-awake/-/expo-keep-awake-10.2.0.tgz#46f04740bccd321732bbbed93491e2076d5dbbd7"
   integrity sha512-kIRtO4Hmrvxh4E45IPWG/NiUZsuRe1AQwBT09pq+kx8nm6tUS4B9TeL6+1NFy+qVBLbGKDqoQD5Ez7XYTFtBeQ==
 
+expo-location@~14.3.0:
+  version "14.3.0"
+  resolved "https://registry.yarnpkg.com/expo-location/-/expo-location-14.3.0.tgz#f613147e36afad974732ddc1b4e142d7e1b8bba2"
+  integrity sha512-CKU6bW1rB6521LruyUsZm6dQXXBix9E64ZZmOpVgom1DQ3Bfd23IBvXXeUQeIhy+NbOzF1itFrPTLzspgl6wPg==
+  dependencies:
+    "@expo/config-plugins" "~5.0.0"
+
 expo-modules-autolinking@0.10.3:
   version "0.10.3"
   resolved "https://registry.yarnpkg.com/expo-modules-autolinking/-/expo-modules-autolinking-0.10.3.tgz#31bfcf3e4b613a7c3949fb1f1e9c23eea4c14caf"
@@ -2992,6 +3040,14 @@ expo-status-bar@~1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/expo-status-bar/-/expo-status-bar-1.4.0.tgz#c0317de2c53878340f4b4f00ff7e4ba14399a7fb"
   integrity sha512-vh98g8qMIjig/2XTBsoAWS6Vo2dIIwDWjB3/GiuZ9Lazpxc9GO/APfJ4dar7MibzIDUKIrjotrcL6rLdPH13Ew==
+
+expo-task-manager@~10.3.0:
+  version "10.3.0"
+  resolved "https://registry.yarnpkg.com/expo-task-manager/-/expo-task-manager-10.3.0.tgz#0694b59361d5d47772d0fb3685ddf72763ce17c0"
+  integrity sha512-et6BT2q+woxu64XqHZlAfDtyOw5rZKjncUa7DOWrHWkf3MyxYWDtk89tmT+pJHdgupaw3qplIip5mLU1/vE1HA==
+  dependencies:
+    "@expo/config-plugins" "~5.0.0"
+    unimodules-app-loader "~3.1.0"
 
 expo@~46.0.13:
   version "46.0.15"
@@ -3517,6 +3573,14 @@ http-errors@2.0.0:
     setprototypeof "1.2.0"
     statuses "2.0.1"
     toidentifier "1.0.1"
+
+i18n-js@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/i18n-js/-/i18n-js-4.1.1.tgz#05ebd03c4d92f6dc26a00d7c5cfb90f9c326b67c"
+  integrity sha512-Uph8ghmfShexVhDcNtg5s40zprJZPrhW5iOEKsUwPiiBpIGN/0EJ9W7DTqhLFlWfAlpkFiaLxVxHsk8f+3KjIQ==
+  dependencies:
+    bignumber.js "*"
+    lodash "*"
 
 iconv-lite@0.4.24:
   version "0.4.24"
@@ -4136,7 +4200,7 @@ lodash.throttle@^4.1.1:
   resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
   integrity sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ==
 
-lodash@^4.17.13, lodash@^4.17.15, lodash@^4.17.4:
+lodash@*, lodash@^4.17.13, lodash@^4.17.15, lodash@^4.17.4:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -6251,6 +6315,11 @@ unicode-property-aliases-ecmascript@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/unicode-property-aliases-ecmascript/-/unicode-property-aliases-ecmascript-2.1.0.tgz#43d41e3be698bd493ef911077c9b131f827e8ccd"
   integrity sha512-6t3foTQI9qne+OZoVQB/8x8rk2k1eVy1gRXhV3oFQ5T6R1dqQ1xtin3XqSlx3+ATBkliTaR/hHyJBm+LVPNM8w==
+
+unimodules-app-loader@~3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/unimodules-app-loader/-/unimodules-app-loader-3.1.0.tgz#1779d9505275e2da2e25812e142198665a14cb2d"
+  integrity sha512-ykDpkZY3ZUckNQN83YP1eY0uxLHK6cLP4WMa4RWsjx5JX38dFvcXpoE/+X2RZSbIgRcCR1fjyd7H1NHjDuXhuQ==
 
 union-value@^1.0.0:
   version "1.0.1"
