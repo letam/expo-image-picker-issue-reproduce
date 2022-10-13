@@ -76,15 +76,8 @@ const App = () => {
         throw new Error(error.message);
       }
       console.log("Locations: ", locations);
-      // if (locations) {
-
-      //   const [location] = locations;
-      //   updateDriverLocation(location);
-      // }
     }
   );
-
-  // TODO: add min version check also on this level, hence min version check should work via API KEY
 
   return (
     <View>
