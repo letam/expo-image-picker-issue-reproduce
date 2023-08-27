@@ -5,7 +5,6 @@ export default ({ config }: ConfigContext) => {
 		name: process.env.APP_NAME,
 		slug: "trans-it-camera-app",
 		version: config?.version,
-		owner: "transit",
 		runtimeVersion: config?.version,
 		splash: {
 			image: "./src/assets/splashScreen.png",
