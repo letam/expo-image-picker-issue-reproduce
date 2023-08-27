@@ -13,7 +13,7 @@ export default ({ config }: ConfigContext) => {
 		},
 		extra: {
 			eas: {
-				projectId: "17790f01-562f-465a-be7e-8440d16ca638",
+				projectId: process.env.PROJECT_ID,
 			},
 		},
 		androidStatusBar: {
