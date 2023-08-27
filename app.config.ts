@@ -60,7 +60,7 @@ export default ({ config }: ConfigContext) => {
 			androidCollapsedTitle: "Trans-IT notifications",
 		},
 		android: {
-			package: process.env.PACKAGE_NAME,
+			package: "process.env.PACKAGE_NAME",
 			userInterfaceStyle: "automatic",
 			useNextNotificationsApi: true,
 			icon: process.env.APP_VARIANT
