@@ -1,36 +1,4 @@
 {
-  "compilerOptions": {
-    "jsx": "react-native",
-    "target": "ESNext",
-    "lib": ["DOM", "ESNext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "noEmit": true,
-    "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "moduleResolution": "node",
-    "strict": true
-  },
-  "extends": "expo/tsconfig.base",
-  "exclude": [
-    ".history/**/*",
-    "node_modules",
-    ".expo",
-    ".expo-shared",
-    "amplify",
-    "cypress",
-    ".git",
-    ".app-cache",
-    ".npm",
-    ".npm-tmp",
-    "dist",
-    "dist*",
-    "node_modules",
-    "subfolder/dist",
-    "subfolder/node_modules",
-    "**/dist/*",
-    "**/node_modules/*",
-    "system-tests"
-  ]
+  "compilerOptions": {},
+  "extends": "expo/tsconfig.base"
 }
