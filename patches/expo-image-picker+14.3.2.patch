@@ -1,8 +1,8 @@
 diff --git a/node_modules/expo-image-picker/android/src/main/java/expo/modules/imagepicker/ImagePickerModule.kt b/node_modules/expo-image-picker/android/src/main/java/expo/modules/imagepicker/ImagePickerModule.kt
-index eb83273..f81f45b 100644
+index 5afa8b1..fc032c5 100644
 --- a/node_modules/expo-image-picker/android/src/main/java/expo/modules/imagepicker/ImagePickerModule.kt
 +++ b/node_modules/expo-image-picker/android/src/main/java/expo/modules/imagepicker/ImagePickerModule.kt
-@@ -26,6 +26,7 @@ import kotlinx.coroutines.withContext
+@@ -29,6 +29,7 @@ import kotlinx.coroutines.withContext
  import java.io.File
  import kotlin.coroutines.resume
  import kotlin.coroutines.resumeWithException
@@ -10,7 +10,7 @@ index eb83273..f81f45b 100644
  
  // TODO(@bbarthec): rename to ExpoImagePicker
  private const val moduleName = "ExponentImagePicker"
-@@ -62,12 +63,29 @@ class ImagePickerModule : Module() {
+@@ -65,12 +66,28 @@ class ImagePickerModule : Module() {
        val uri = mediaFile.toContentUri(context)
        val contractOptions = options.toCameraContractOptions(uri)
  
@@ -29,7 +29,6 @@ index eb83273..f81f45b 100644
      AsyncFunction("launchImageLibraryAsync") Coroutine { options: ImagePickerOptions ->
        val contractOptions = options.toImageLibraryContractOptions()
 -      launchContract({ imageLibraryLauncher.launch(contractOptions) }, options)
-+
 +      try {
 +        launchContract({ imageLibraryLauncher.launch(contractOptions) }, options)
 +      } catch (e: IllegalStateException) {
@@ -42,7 +41,7 @@ index eb83273..f81f45b 100644
      }
  
      AsyncFunction("getPendingResultAsync") Coroutine { ->
-@@ -134,8 +152,18 @@ class ImagePickerModule : Module() {
+@@ -137,8 +154,18 @@ class ImagePickerModule : Module() {
          result.data.size == 1 &&
          result.data[0].first == MediaType.IMAGE
        ) {
@@ -63,4 +62,3 @@ index eb83273..f81f45b 100644
          }
        }
        mediaHandler.readExtras(result.data, options)
-
